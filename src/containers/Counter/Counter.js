@@ -17,7 +17,11 @@ class Counter extends Component {
                 <hr />
                 <button onClick={()=> this.props.onLogResults(this.props.ctr)}>Store Result</button>
                 <ul>
+<<<<<<< HEAD
                     {this.props.res.map(item=> {
+=======
+                    {this.props.logs.map(item=> {
+>>>>>>> 6c8c662064472e34b5344bc11a206d9f9014a7e2
                         return <li key={item.id} onClick={()=> this.props.onRemoveItem(item.id)}>{item.value}</li>
                     })}
                 </ul>
@@ -30,7 +34,11 @@ class Counter extends Component {
 const mapStateToProps = state => {
     return {
         ctr: state.ctr.counter,
+<<<<<<< HEAD
         res: state.res.results
+=======
+        logs: state.res.results
+>>>>>>> 6c8c662064472e34b5344bc11a206d9f9014a7e2
     };
 };
 
